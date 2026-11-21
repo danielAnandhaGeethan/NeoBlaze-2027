@@ -10,20 +10,8 @@ function devApi(): Plugin {
     configureServer(server) {
       server.middlewares.use("/api/event", async (req, res) => {
         try {
-          const method = req.method ?? "GET";
-          const chunks: Buffer[] = [];
-          for await (const chunk of req) chunks.push(chunk as Buffer);
-          const request = new Request(`http://localhost${req.originalUrl ?? req.url ?? ""}`, {
-            method,
-            headers: req.headers as Record<string, string>,
-            ...(method === "GET" || method === "HEAD" ? {} : { body: Buffer.concat(chunks) }),
-          });
-          const handlers = (await server.ssrLoadModule("/api/event.ts")) as Record<string, (r: Request) => Promise<Response>>;
-          const handler = handlers[method];
-          const response = handler ? await handler(request) : new Response("Method not allowed", { status: 405 });
-          res.statusCode = response.status;
-          response.headers.forEach((value, name) => res.setHeader(name, value));
-          res.end(Buffer.from(await response.arrayBuffer()));
+          const mod = (await server.ssrLoadModule("/api/event.ts")) as { default: (r: typeof req, s: typeof res) => Promise<void> };
+          await mod.default(req, res);
         } catch (e) {
           console.error(":::::devApi:::::", e);
           res.statusCode = 500;
