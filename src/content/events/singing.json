@@ -1,0 +1,22 @@
+{
+  "description": "Let your song speak your heart!",
+  "facts": [
+    {
+      "label": "Participants",
+      "value": "Minimum 5 singers per church (not counting instrumentalists)"
+    },
+    {
+      "label": "Time limit",
+      "value": "7 minutes (including instruments setup)"
+    }
+  ],
+  "rules": [
+    "Songs must be own composition with own lyrics based on the event theme verse.",
+    "Each team must include at least one creative vocal element, such as a clap pattern, hum, chant, scripture whisper, vocal slide, unison shout, etc.",
+    "Teams must provide three copies of the lyrics sheet to the judges without mentioning the church name.",
+    "All lyrics and on-stage presentation must be Christ-honoring and family-friendly."
+  ],
+  "submission": {
+    "required": false
+  }
+}

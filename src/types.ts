@@ -7,19 +7,26 @@ export interface Fact {
   value: string;
 }
 
-export interface EventItem {
+/** Set by the site owner in src/data.ts. */
+export interface EventIdentity {
   id: string;
   name: string;
   mode: EventMode;
   tagline: string;
   /** Short Bible text and its reference, shown on the event card. */
   bible: { text: string; reference: string };
+}
+
+/** Edited by the event in-charges through the editor form; stored in src/content/events/<id>.json. */
+export interface EventContent {
   description: string;
   /** Participants, time limit and similar one-line facts. */
   facts: Fact[];
   rules: string[];
   submission: { required: boolean; deadline?: string; format?: string };
 }
+
+export type EventItem = EventIdentity & EventContent;
 
 export interface ScheduleItem {
   time: string;

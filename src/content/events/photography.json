@@ -1,0 +1,23 @@
+{
+  "description": "You have a camera and a keen eye. We'll give you a theme on the spot. Capture a winning shot that tells a story.",
+  "facts": [
+    {
+      "label": "Participants",
+      "value": "2 per church"
+    },
+    {
+      "label": "Time limit",
+      "value": "90 minutes"
+    }
+  ],
+  "rules": [
+    "The specific topic for the photography competition will be announced on the event day.",
+    "All photos must be taken within the church premises and campus.",
+    "Any device is welcome, from professional DSLRs to smartphone cameras.",
+    "Heavy editing, filters, or composite images are not allowed. Only basic corrections (brightness, contrast, cropping) are permitted.",
+    "Submissions after the 90-minute deadline will not be considered for judging."
+  ],
+  "submission": {
+    "required": false
+  }
+}

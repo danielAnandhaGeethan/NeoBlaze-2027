@@ -1,0 +1,15 @@
+{
+  "description": "Create a stunning video reel based on the event theme and share it with the world. Your chance to make an impact online.",
+  "facts": [],
+  "rules": [
+    "Create a video in reel format (e.g., for Instagram/Facebook) based on the event theme.",
+    "The maximum duration is 1 minute.",
+    "All content must be 100% original. No plagiarism or using clips from other creators.",
+    "Content must be Christ-honoring. Any inappropriate videos will be immediately disqualified."
+  ],
+  "submission": {
+    "required": true,
+    "deadline": "deadline",
+    "format": "Upload the video to Google Drive, set sharing to 'Anyone with the link', and email the link to the submission address. Include your church name and contact person in the email."
+  }
+}

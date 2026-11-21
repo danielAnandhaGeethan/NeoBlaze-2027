@@ -1,0 +1,19 @@
+{
+  "description": "Dive deep into the scriptures in this fast-paced and exciting quiz. How well do you know the Word?",
+  "facts": [
+    {
+      "label": "Participants",
+      "value": "3 per church"
+    }
+  ],
+  "rules": [
+    "Bible versions allowed: Tamil (பழைய மொழிபெயர்ப்பு), English (ESV).",
+    "Syllabus for Prelims: to be announced.",
+    "For all subsequent rounds: The entire Bible.",
+    "No phones, gadgets, or any form of notes are allowed during the quiz.",
+    "In all matters, the Quiz Master's decision is final."
+  ],
+  "submission": {
+    "required": false
+  }
+}

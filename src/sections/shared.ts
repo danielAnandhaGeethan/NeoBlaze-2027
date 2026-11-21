@@ -1,6 +1,13 @@
 import { data } from "../data";
 import type { EventMode } from "../types";
 
+const escapes: Record<string, string> = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
+
+/** Escapes text for use inside HTML, so text typed into the editor form can never inject markup. */
+export function esc(text: string): string {
+  return text.replace(/[&<>"']/g, (c) => escapes[c] ?? c);
+}
+
 /** Flame and cross divider; pass a justify-* class to align it. */
 export function ornament(align = "justify-center"): string {
   const flame = `<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c1 4 5 6 5 11a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-4-1-6 1-10z"/></svg>`;

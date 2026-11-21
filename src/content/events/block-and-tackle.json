@@ -1,0 +1,17 @@
+{
+  "description": "A fun and challenging debate-style event where you must argue for and against a topic on the fly. A true test of wit and spontaneity!",
+  "facts": [
+    {
+      "label": "Participants",
+      "value": "1 per church"
+    }
+  ],
+  "rules": [
+    "The topic will be given on the spot.",
+    "You will have 2 minutes to prepare your thoughts.",
+    "Content must be clean, logical, and respectful."
+  ],
+  "submission": {
+    "required": false
+  }
+}

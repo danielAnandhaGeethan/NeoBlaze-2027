@@ -1,0 +1,16 @@
+{
+  "description": "Ready for anything? This event is a complete mystery until it's announced. Come with an open mind and a spirit of fun!",
+  "facts": [
+    {
+      "label": "Participants",
+      "value": "3 per church (1 team per church)"
+    }
+  ],
+  "rules": [
+    "All event details will be revealed only on the day of the event.",
+    "Any special materials required for the event will be provided by the organizers."
+  ],
+  "submission": {
+    "required": false
+  }
+}

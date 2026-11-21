@@ -7,20 +7,20 @@
 
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
-/* "Refiner's fire" palette (Malachi 3:2-3, 1 Peter 1:7): molten orange and gold on ember-black. Edit here to re-theme. */
+/* "Olive grove" palette (Psalm 52:8 a green olive tree, Genesis 8:11 the olive leaf, Psalm 23:5 oil): olive green and gold on warm stone. Edit here to re-theme. */
 @theme {
-  --color-parchment: #fff4e6; /* light page */
-  --color-wool: #fffbf5; /* Isa 1:18 white as wool: light surface */
-  --color-umber: #2a140a; /* light ink */
-  --color-ember: #bf3f00; /* Mal 3:2 refiner's fire: light primary */
-  --color-gold: #e09a00; /* Prov 25:11 gold: light accent (decoration only) */
-  --color-teal-deep: #0f766e; /* light "Online" tag */
-  --color-coal: #150c07; /* dark page */
-  --color-coal-surface: #231510; /* dark surface */
-  --color-ash: #fbefe3; /* dark text */
-  --color-molten: #ff6b1a; /* Ex 3:2 burning bush, Acts 2:3 fire: dark primary */
-  --color-refined-gold: #ffc247; /* 1 Pet 1:7, Rev 3:18 gold tried in the fire: dark accent */
-  --color-teal-light: #4fc3b8; /* dark "Online" tag */
+  --color-stone: #f6f3e8; /* light page */
+  --color-linen: #fffef8; /* light surface */
+  --color-olive-ink: #2a2f14; /* light ink */
+  --color-olive: #566512; /* Ps 52:8 green olive tree: light primary */
+  --color-oil-gold: #c9a227; /* Ps 23:5 oil: light accent (decoration only) */
+  --color-teal-deep: #2f6f73; /* light "Online" tag */
+  --color-grove: #12150a; /* dark page */
+  --color-grove-surface: #1e2312; /* dark surface */
+  --color-leaf-ash: #f2f0df; /* dark text */
+  --color-leaf: #b7cc4b; /* Gen 8:11 the olive leaf: dark primary */
+  --color-oil: #e8c453; /* Ps 23:5 oil: dark accent */
+  --color-teal-light: #6fc4c0; /* dark "Online" tag */
   --font-heading: "Grenze Gotisch Variable", "Noto Serif Tamil Variable", ui-serif, Georgia, serif;
   --font-display: "Cinzel Variable", "Noto Serif Tamil Variable", ui-serif, Georgia, serif;
   --font-serif: "EB Garamond Variable", "Noto Serif Tamil Variable", ui-serif, Georgia, serif;
@@ -28,43 +28,43 @@
 
 /* Semantic tokens: light values here, dark values below. Components use only these. */
 :root {
-  --page: var(--color-parchment);
-  --surface: var(--color-wool);
-  --body: var(--color-umber);
-  --muted: #6b5446;
-  --primary: var(--color-ember);
+  --page: var(--color-stone);
+  --surface: var(--color-linen);
+  --body: var(--color-olive-ink);
+  --muted: #5e6440;
+  --primary: var(--color-olive);
   --on-primary: #ffffff;
-  --accent: var(--color-gold);
-  --on-accent: var(--color-umber);
+  --accent: var(--color-oil-gold);
+  --on-accent: var(--color-olive-ink);
   --tag-online: var(--color-teal-deep);
   --on-tag-online: #ffffff;
-  --tag-offline: var(--color-gold);
-  --on-tag-offline: var(--color-umber);
-  --line: rgb(42 20 10 / 0.14);
+  --tag-offline: var(--color-oil-gold);
+  --on-tag-offline: var(--color-olive-ink);
+  --line: rgb(42 47 20 / 0.14);
   --texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .35 0 0 0 0 .2 0 0 0 .08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   --texture-size: 160px 160px;
 }
 
 [data-theme="dark"] {
   color-scheme: dark;
-  --page: var(--color-coal);
-  --surface: var(--color-coal-surface);
-  --body: var(--color-ash);
-  --muted: #c9b5a5;
-  --primary: var(--color-molten);
-  --on-primary: var(--color-coal);
-  --accent: var(--color-refined-gold);
-  --on-accent: var(--color-coal);
+  --page: var(--color-grove);
+  --surface: var(--color-grove-surface);
+  --body: var(--color-leaf-ash);
+  --muted: #bdc09c;
+  --primary: var(--color-leaf);
+  --on-primary: var(--color-grove);
+  --accent: var(--color-oil);
+  --on-accent: var(--color-grove);
   --tag-online: var(--color-teal-light);
-  --on-tag-online: var(--color-coal);
-  --tag-offline: var(--color-refined-gold);
-  --on-tag-offline: var(--color-coal);
-  --line: rgb(251 239 227 / 0.16);
-  /* Floating embers instead of stars. */
+  --on-tag-online: var(--color-grove);
+  --tag-offline: var(--color-oil);
+  --on-tag-offline: var(--color-grove);
+  --line: rgb(242 240 223 / 0.16);
+  /* Fireflies over the grove. */
   --texture:
-    radial-gradient(1px 1px at 20px 30px, rgb(255 107 26 / 0.55), transparent),
-    radial-gradient(1px 1px at 90px 70px, rgb(255 194 71 / 0.4), transparent),
-    radial-gradient(1.5px 1.5px at 150px 120px, rgb(251 239 227 / 0.3), transparent);
+    radial-gradient(1px 1px at 20px 30px, rgb(183 204 75 / 0.5), transparent),
+    radial-gradient(1px 1px at 90px 70px, rgb(232 196 83 / 0.4), transparent),
+    radial-gradient(1.5px 1.5px at 150px 120px, rgb(242 240 223 / 0.3), transparent);
   --texture-size: 200px 160px;
 }
 
@@ -119,7 +119,7 @@
 
 /* Dark mode: rim light that follows the church outline, so the transparent image stays readable. */
 [data-theme="dark"] .img-rim {
-  filter: drop-shadow(0 0 1.5px rgb(251 239 227 / 0.85)) drop-shadow(0 0 22px rgb(255 194 71 / 0.16));
+  filter: drop-shadow(0 0 1.5px rgb(242 240 223 / 0.85)) drop-shadow(0 0 22px rgb(232 196 83 / 0.16));
 }
 
 @media (prefers-reduced-motion: no-preference) {

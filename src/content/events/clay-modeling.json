@@ -1,0 +1,23 @@
+{
+  "description": "Transform a simple block of clay into a work of art that reflects the event's theme. A test of creativity and skill.",
+  "facts": [
+    {
+      "label": "Participants",
+      "value": "2 per church"
+    },
+    {
+      "label": "Time limit",
+      "value": "1 hour"
+    }
+  ],
+  "rules": [
+    "The theme/topic will be revealed on the spot.",
+    "Clay will be provided at the venue. You cannot use any external materials.",
+    "Participants must bring their own moulding tools; none will be provided.",
+    "Your final model should be an original creation and respectful of the event's spiritual tone.",
+    "Be prepared for small twists or constraints from the organizers - it's part of the fun!"
+  ],
+  "submission": {
+    "required": false
+  }
+}

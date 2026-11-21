@@ -1,0 +1,16 @@
+{
+  "description": "The ultimate race against time! Follow the clues, solve the puzzles, and work as a team to uncover the final treasure.",
+  "facts": [
+    {
+      "label": "Participants",
+      "value": "3 per team (at least one female member required)"
+    }
+  ],
+  "rules": [
+    "A comprehensive briefing covering the event format, specific rules, and required procedures will be provided live on the spot.",
+    "A minimum of one (1) female participant is mandatory for all competing teams."
+  ],
+  "submission": {
+    "required": false
+  }
+}

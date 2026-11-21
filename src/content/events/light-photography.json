@@ -1,0 +1,15 @@
+{
+  "description": "Explore the creative use of light in photography. Submit a single, powerful image that captures the essence of the given theme.",
+  "facts": [],
+  "rules": [
+    "Photos must be freshly clicked for this event. No old photos, AI-generated images, or stock photos.",
+    "Submissions must be in JPG or PNG format.",
+    "Basic editing (brightness, contrast, color correction) is allowed. Heavy manipulation (adding/removing objects, composite images) is not allowed.",
+    "Prioritize your safety above all else while taking your photos."
+  ],
+  "submission": {
+    "required": true,
+    "deadline": "deadline",
+    "format": "Submit one photo per participant: upload it to Google Drive and email the link to the submission address."
+  }
+}
