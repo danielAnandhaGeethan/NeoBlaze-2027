@@ -1,6 +1,6 @@
-import { checkKey } from "./auth";
-import { HttpError, getStore } from "./store";
-import { ValidationError, validateContent } from "./validate";
+import { checkKey } from "./auth.js";
+import { HttpError, getStore } from "./store.js";
+import { ValidationError, validateContent } from "./validate.js";
 
 const json = (body: unknown, status = 200): Response =>
   new Response(JSON.stringify(body), {

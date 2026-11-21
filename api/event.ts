@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from "node:http";
-import { GET, POST } from "./_lib/event-handlers";
-import { runWebHandler } from "./_lib/node-adapter";
+import { GET, POST } from "./_lib/event-handlers.js";
+import { runWebHandler } from "./_lib/node-adapter.js";
 
 /** Vercel entry point for /api/event: a plain Node (req, res) function that runs the GET and POST handlers. */
 export default async function handler(req: IncomingMessage, res: ServerResponse): Promise<void> {
